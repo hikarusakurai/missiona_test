@@ -1,0 +1,8 @@
+@use "../global/" as *;
+
+.section-title{
+  color: $red;
+  font-size: rem(18);
+  font-weight: $bold;
+  letter-spacing: rem(-2);
+}

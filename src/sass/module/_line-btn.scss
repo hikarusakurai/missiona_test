@@ -1,0 +1,36 @@
+@use "../global/" as *;
+
+.line-btn{
+  display: inline-block;
+  background-color: #05C755;
+  color: $white;
+  padding: rem(10) rem(20);
+  border-radius: rem(40);
+  font-size: rem(16);
+  font-weight: $bold;
+  position: relative;
+  max-width: rem(335);
+  width: 100%;
+}
+.line-btn::before{
+  content: "";
+  display: block;
+  background-color: $white;
+  width: rem(2);
+  height: rem(10);
+  transform: rotate(-45deg);
+  position: absolute;
+  right: rem(8);
+  top: rem(14);
+}
+.line-btn::after{
+  content: "";
+  display: block;
+  background-color: $white;
+  width: rem(2);
+  height: rem(10);
+  transform: rotate(45deg);
+  position: absolute;
+  right: rem(8);
+  bottom: rem(14);
+}
